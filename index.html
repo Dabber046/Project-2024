@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Guessing Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .neon-text {
+            color: #ff2600;
+            text-shadow: 0 0 10px #39ff14;
+        }
+        .neon-border {
+            border: 2px solid #ff073a;
+            box-shadow: 0 0 10px #ff073a;
+        }
+        .flash-correct {
+            background-color: #28a745;
+            animation: flash 0.5s;
+        }
+        .flash-wrong {
+            background-color: #dc3545;
+            animation: flash 0.5s;
+        }
+        @keyframes flash {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+    </style>
+</head>
+<body class="bg-blue-50 flex flex-col items-center dark-mode:bg-gray-900">
+    <div class="text-center my-8 neon-text">
+        <h1 class="text-4xl">Welcome to the Guessing Game!</h1>
+    </div>
+    <div class="bg-white p-8 rounded-lg shadow-lg text-center neon-border">
+        <h2 class="text-4xl text-indigo-700 mb-4 neon-text">Guess the Animal</h2>
+        <p id="clue"><img src="meerkat.jpg" alt="Animal" class="mx-auto w-48 h-auto rounded-lg shadow-lg"></p>
+        <div class="grid grid-cols-3 gap-4 mt-4">
+            <div class="animal-box p-2 rounded-lg shadow-lg cursor-pointer" data-animal="meerkat">
+                <img src="meerkat.jpg" alt="Meerkat" class="w-32 h-32 rounded-lg">
+            </div>
+            <div class="animal-box p-2 rounded-lg shadow-lg cursor-pointer" data-animal="elephant">
+                <img src="elephant.jpg" alt="Elephant" class="w-32 h-32 rounded-lg">
+            </div>
+            <div class="animal-box p-2 rounded-lg shadow-lg cursor-pointer" data-animal="giraffe">
+                <img src="giraffe.jpg" alt="Giraffe" class="w-32 h-32 rounded-lg">
+            </div>
+            <div class="animal-box p-2 rounded-lg shadow-lg cursor-pointer" data-animal="lion">
+                <img src="lion.jpg" alt="Lion" class="w-32 h-32 rounded-lg">
+            </div>
+            <div class="animal-box p-2 rounded-lg shadow-lg cursor-pointer" data-animal="tiger">
+                <img src="tiger.jpg" alt="Tiger" class="w-32 h-32 rounded-lg">
+            </div>
+        </div>
+        <p id="result" class="text-lg mt-4"></p>
+    </div>
+    <div class="mt-10 w-full text-center neon-border p-4">
+        <p class="text-gray-600">Footer</p>
+    </div>
+    <button id="theme-toggle" class="absolute top-4 right-4 bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-700 transition duration-200">Toggle Dark Mode</button>
+    <footer>
+        <label for="answer-display">Correct Answer:</label>
+        <input type="text" id="answer-display" readonly>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
