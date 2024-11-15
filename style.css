@@ -1,0 +1,100 @@
+#animal-game {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.reset-button {
+    background-color: #9b5de5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+
+.reset-button:hover {
+    background-color: #6d28d9; 
+}
+.reset-button, .home-button {
+    background-color: #f97316; 
+    color: black;
+    padding: 10px 20px;
+    border: 2px solid black; 
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    position: absolute;
+    top: 16px;
+}
+
+.reset-button {
+    left: 16px;
+}
+
+.home-button {
+    right: 16px; 
+}
+
+.reset-button:hover, .home-button:hover {
+    background-color: #ea580c;
+    transform: scale(1.05); 
+}
+
+.image-container {
+    background-color: white; 
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+}
+
+.message {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ef4444; 
+    margin-top: 10px;
+}
+
+
+.image-container.correct {
+    background-color: #a7f3d0; 
+}
+
+
+.image-container.incorrect {
+    background-color: #fecaca; 
+}
+
+.guess-button {
+    background-color: #d8b4fe; 
+    color: black;
+    padding: 8px 16px;
+    margin: 4px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.guess-button:hover {
+    background-color: #c084fc; 
+}
+
+
+.image-container.correct,
+.image-container.incorrect {
+    animation: color-change 0.5s ease-in-out;
+}
+
+@keyframes color-change {
+    from {
+        background-color: white;
+    }
+    to {
+       
+    }
+}
