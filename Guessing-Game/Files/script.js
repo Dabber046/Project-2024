@@ -1,27 +1,24 @@
-// Track the number of correct guesses
-let correctGuesses = 0;
+    let correctGuesses = 0;
 
-function makeGuess(button, correctAnswer, userGuess) {
-    const box = button.parentElement.parentElement; // The container of the animal box
+    function makeGuess(button, correctAnswer, userGuess) {
+    const box = button.parentElement.parentElement; 
     const message = box.querySelector('.message');
     
     if (userGuess === correctAnswer) {
-        // Correct guess: turn the box green and hide the message
         button.classList.add('bg-green-500', 'font-bold');
         button.classList.remove('bg-purple-400', 'bg-red-500');
         box.classList.remove('bg-purple-500', 'bg-red-500');
         box.classList.add('bg-green-500');
-        message.classList.add('hidden'); // Hide the "Try Again" message
+        message.classList.add('hidden'); 
 
-        // Increment correct guesses
         correctGuesses++;
 
-        // If all answers are correct, set a 10-second delay before resetting the game
+        
         if (correctGuesses === 5) {
-            setTimeout(resetGame, 10000); // 10-second delay
+            setTimeout(resetGame, 10000);
         }
     } else {
-        // Incorrect guess: turn the box red and show the "Try Again" message
+      
         box.classList.add('bg-red-500');
         box.classList.remove('bg-purple-500', 'bg-green-500');
         message.classList.remove('hidden');
