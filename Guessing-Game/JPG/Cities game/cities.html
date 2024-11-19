@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cities</title>
+    <link rel="stylesheet" href="./assets/cities-stylesheet.css">
+</head>
+<body>
+    <header id="city-header">
+        <nav>
+            <span id="back">Back To Homepage</span>
+     </nav>
+      
+    </header>
+    <hr>
+    <body>
+        <div class="top-container">
+        <h1 id="cityh1">Guess the city!</h1>
+        <p id="cityh2">Look at the images and challenge yourself to guess the correct city<p>
+        <Button id="start">Let's start</Button>
+       </div>
+       
+        <div class="city-container">
+            <div class="city">
+                <img src="assets/Images/Paris.jpeg" alt="Paris">
+                <div class="city-choices">
+                <button  data-answer="correct">Paris</button>
+                  <button data-answer="wrong">Tokyo</button>
+                  <button data-answer="wrong">Shanghai</button>
+                </div>
+            </div>
+            <div class="city">
+                <img src="assets/Images/Chicago.jpg" alt="Chicago">
+                <div class="city-choices">
+                    <button data-answer="wrong">Atlanta</button>
+                    <button data-answer="correct">Chicago</button>
+                    <button data-answer="wrong">Boston</button>
+                </div>
+            </div>
+            <div class="city">
+                <img src="assets/Images/Newyork.jpg" alt="Newyork">
+                <div class="city-choices">
+                    <button data-answer="correct">New York</button>
+                    <button data-answer="wrong">Chicago</button>
+                    <button data-answer="wrong">Miami</button>
+                </div>
+            </div>
+            <div class="city">
+                <img src="assets/Images/Rome.jpg" alt="Rome">
+                <div class="city-choices">
+                    <button data-answer="wrong">Athens</button>
+                    <button data-answer="correct">Rome</button>
+                    <button data-answer="wrong">Barcelona</button>
+                </div>
+            </div>
+            <div class="city">
+                <img src="assets/Images/Sydney.jpg" alt="Sydney">
+                <div class="city-choices">
+                    <button data-answer="correct">Sydney</button>
+                    <button data-answer="wrong">Hongkong</button>
+                     <button data-answer="wrong">Singapore</button>
+                </div>
+            </div>
+            <div class="city">
+                <img src="assets/Images/Tokyo.png" alt="Tokyo">
+                <div class="city-choices">
+                    <button data-answer="wrong">Seoul</button>
+                    <button data-answer="wrong">Bangkok</button>
+                    <button data-answer="correct">Tokyo</button>
+                </div>
+            </div>
+        
+            <div class="city" id="last-two">
+                <img src="assets/Images/Venice.jpg" alt="Venice">
+                <div class="city-choices">
+                    <button data-answer="wrong">Floence</button>
+                    <button data-answer="wrong">Milan</button>
+                    <button data-answer="correct">Venice</button>
+                </div>
+            </div>
+            <div class="city" id="last-two">
+                <img src="assets/Images/Barcelona.jpg" alt="Barcelona">
+                <div class="city-choices">
+                    <button data-answer="wrong">London</button>
+                    <button data-answer="correct">Barcelona</button>
+                    <button data-answer="wrong">Madrid</button>
+                </div>
+          </div>
+
+    </div>
+         <div id="submit">
+         <button id="subBtn">Submit</button>
+        
+         <button id="again">Play Again</button>
+        </div>
+        <div> <p id="score"></p></div>
+        <div class="ranking">
+          <h3 id="top-five">Top Five Scores</h3>
+        <table id="leaderboard">
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Player Name</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody id="rank"></tbody>
+      </table>
+        </div>
+       
+        <hr>
+        <footer></footer>
+         <script src="cites.js"></script>
+    </body>
+
+</body>
+</html>
