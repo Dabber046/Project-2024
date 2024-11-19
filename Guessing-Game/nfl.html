@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Brief description of your website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Luckiest+Guy&family=Sacramento&display=swap" rel="stylesheet">
+    <title> Guessing Game </title>
+    
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="output.css">
+    
+    <!-- Link to Google Fonts (optional) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+<body class="bg-slate-400 text-black text-center">
+    
+<header class="flex">
+    <button class="mr-20 mt-10 ml-auto bg-white border-black border-4 p-2 w-32" id="home"> Home </button>
+</header>
+
+<section>
+<!-- Modal Structure -->
+<div id="myModal" class="hidden fixed inset-0 bg-black bg-opacity-50 justify-center items-center">
+    <div id="close" class="bg-white p-5 rounded w-[80%] max-w-[500px] shadow-lg">
+        <span class="absolute top-[10px] right-[15px] text-2xl cursor-pointer"></span>
+        <p></p>
+        <button id="openModal" class="mt-1 rounded-full border-black border-4 p-2 cursor-pointer"> Play Again! </button>
+    </div>
+</div>
+
+</section>    
+
+<section>
+
+    <h1 class = "text-center text-5xl"> Choose the Name of the Team! </h1>
+
+</section>
+
+
+<section class = flex-container>
+    <div class = "w-[400px] h-[400px] bg-la-logo bg-cover bg-slate-800 bg-center rounded-lg shadow-lg border-black border-4"></div>
+    <div class="flex gap-2.5 mt-10 justify-center">
+    <button class = "la bg-white rounded-full border-black border-4 p-2 w-32  transition-transform transform hover:scale-105" id = incorrect> Lousiana Hurricanes </button> 
+    <button class = "la bg-white rounded-full border-black border-4 p-2 w-32  transition-transform transform hover:scale-105" id = correct> Los Angeles Rams </button>  
+    <button class = "la bg-white rounded-full border-black border-4 p-2 w-32  transition-transform transform hover:scale-105" id = incorrect> Los Angeles Team </button>  
+    </div>  
+</section>
+
+<section class = flex-container>
+    <div class = "w-[400px] h-[400px] bg-miami-logo bg-cover bg-slate-800 bg-center rounded-lg shadow-lg border-black border-4"> </div>
+    <div class="flex gap-2.5 mt-10 justify-center">
+    <button class = "miami bg-white rounded-full border-black border-4 p-2 w-32  transition-transform transform hover:scale-105" id = incorrect> Chicago Sharks </button> 
+    <button class = "miami bg-white rounded-full border-black border-4 p-2 w-32  transition-transform transform hover:scale-105" id = incorrect> San Diego Mariners </button>  
+    <button class = "miami bg-white rounded-full border-black border-4 p-2 w-32  transition-transform transform hover:scale-105" id = correct> Miami Dolphins</button>  
+    </div> 
+</section>
+
+<section class = flex-container>
+    <div class = "w-[400px] h-[400px] bg-titans-logo bg-cover bg-slate-800 bg-center rounded-lg shadow-lg border-black border-4"> </div>
+    <div class="flex gap-2.5 mt-10 justify-center">
+    <button class = "titans  bg-white rounded-full border-black border-4 p-2 w-32  transition-transform transform hover:scale-105" id = incorrect> Texas Rangers </button> 
+    <button class = "titans  bg-white rounded-full border-black border-4 p-2 w-32  transition-transform transform hover:scale-105" id = correct> Tennessee Titans </button>  
+    <button class = "titans  bg-white rounded-full border-black border-4 p-2 w-32  transition-transform transform hover:scale-105" id = incorrect> Texas Titans </button>  
+    </div> 
+</section>
+
+
+<section class = flex-container>
+    <div class = "w-[400px] h-[400px] bg bg-detroit-logo bg-slate-800 bg-cover bg-center rounded-lg shadow-lg border-black border-4"> </div>
+    <div class="flex gap-2.5 mt-10 justify-center">
+    <button class = "lions bg-white rounded-full border-black border-4 p-2 w-32  transition-transform transform hover:scale-105" id = correct> Detroit Lions </button> 
+    <button class = "lions bg-white rounded-full border-black border-4 p-2 w-32  transition-transform transform hover:scale-105" id = incorrect> Michigan Lions</button>  
+    <button class = "lions bg-white rounded-full border-black border-4 p-2 w-32  transition-transform transform hover:scale-105" id = incorrect> Indianapolis Lions</button>  
+    </div> 
+</section>
+
+
+<section class = flex-container>
+    <div class = "w-[400px] h-[400px] bg bg-packers-logo bg-cover bg-slate-800 bg-center rounded-lg shadow-lg border-black border-4 bg-url[('JPG/nfl-green-bay-packers.png')]"> </div>
+    <div class="flex gap-2.5 mt-10 justify-center">
+    <button class = "packers bg-white rounded-full border-black border-4 p-2 w-32  transition-transform transform hover:scale-105" id = incorrect> Minnesota Packers </button> 
+    <button class = "packers bg-white rounded-full border-black border-4 p-2 w-32  transition-transform transform hover:scale-105" id = incorrect> Wisconsin Packers </button>  
+    <button class = "packers bg-white rounded-full border-black border-4 p-2 w-32  transition-transform transform hover:scale-105" id = correct> Green Bay Packers </button>   
+    </div> 
+</section>
+
+
+<section class = flex-container>
+    <div class ="w-[400px] h-[400px] bg-colts-logo bg-cover bg-slate-800 bg-center rounded-lg shadow-lg border-black border-4"></div>
+    <div class="flex gap-2.5 mt-10 justify-center">
+    <button class = "colts bg-white rounded-full border-black border-4 p-2 w-32  transition-transform transform hover:scale-105" id = incorrect> New York Colts</button> 
+    <button class = "colts bg-white rounded-full border-black border-4 p-2 w-32  transition-transform transform hover:scale-105" id = incorrect> Chicago Colts</button>  
+    <button class = "colts bg-white rounded-full border-black border-4 p-2 w-32  transition-transform transform hover:scale-105" id = correct> Indianapolis Colts</button>  
+    </div> 
+</section>
+    
+
+    <!-- Favicon (optional) -->
+    <link rel="icon" href="favicon.icon" type="image/x-icon">
+
+    <!-- Link to external JavaScript (optional) -->
+    <script defer src="nflscript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin:0;
+}
+body{
+    background-color:#121212;
+}
+#city-header {
+  margin-bottom:20px;
+   height: 50px;
+   display: flex;
+   justify-content:flex-start;
+   align-items:flex-end;
+}
+
+hr {
+    border:2px solid purple;
+
+}
+#back {
+    border: 1px solid rgb(248, 11, 248);
+    padding:10px;
+    margin-left: 30px;
+    cursor: pointer;
+    color:white;
+
+}
+#again {
+    background-color:rgb(229, 229, 144) ;
+    padding:15px 5px;
+    margin: 20px;
+    cursor: pointer;
+    color:palevioletred;
+    font-weight: bold;
+    border-radius: 5px;
+    }
+label {
+    color:white;
+}
+.top-container {
+    text-align: center;
+}
+#cityh1 {
+    font-size: 35px;
+    color: white;
+    margin-top: 30px;
+    text-shadow: 1px 1px 2px black, 0 0 25px pink, 0 0 5px purple;
+}
+#cityh2 {
+    color:whitesmoke;
+}
+#start {
+    background-color:yellowgreen;
+    color:black;
+    padding: 10px 80px;
+    margin-top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.city-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+
+}
+.city-container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.city {
+    padding:30px 15px;
+
+}
+
+.city img {
+    width:300px;
+    height: 220px;
+    border-radius: 10px;
+}
+#last-two img{
+    width: 400px;
+    height: 220px;
+}
+.city-choices {
+    text-align: center;
+
+}
+.city-choices button {
+    cursor: pointer;
+    padding:5px;
+    margin: 5px;
+    width:80px;
+    border-radius: 20px;
+}
+.city-choices button:hover{
+   transform: scale(1.2) ;
+}
+
+ #submit {
+display: flex;
+justify-content: center;
+margin-bottom: 40px;
+
+ }
+ #subBtn {
+    background-color: green;
+    color:#d4edda;
+    border-radius:20px;
+    padding: 10px 10px;
+    font-size: 20px;
+    cursor: pointer;
+ }
+#score {
+    align-items: flex-end;
+    color:#d4edda;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+ #top-five {
+    text-align: center;
+    color:wheat;
+
+}
+ #rank {
+    margin: 0 auto;
+    font-size: 1.5em;
+    text-align: center;
+    color: wheat;
+ }
+table, th , td {
+    border:1px solid goldenrod;
+    margin: 0 auto;
+    color:wheat;
+}
+
+footer {
+    background-color:rgb(67, 67, 67);
+    height:50px;
+}

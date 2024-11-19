@@ -1,0 +1,15 @@
+{
+  "name": "project-2024",
+  "version": "1.0.0",
+  "description": "Team Project 2024",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build": "tailwindcss -i ./Guessing-Game/style.css -o ./Guessing-Game/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.15"
+  }
+}

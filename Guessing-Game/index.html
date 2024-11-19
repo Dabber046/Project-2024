@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Brief description of your website">
+    <title>Page Title</title>
+    
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="output.css">
+    
+    <!-- Link to Google Fonts (optional) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+
+    <h1 class=" text-center text-5xl"> The Guessing Game </h1>
+
+    <h2 class ="text-center text-2xl mt-8"> Select A Categroy Below To Play! </h2>
+
+<section class = flex-container>
+
+    <section class = flex-container>
+        <h1 class="text-center text-4xl mb-5"> Guess The City! </h1>
+        <div class = "w-[400px] h-[400px] bg-chicago bg-cover bg-slate-800 bg-center rounded-lg shadow-lg border-black border-4"></div>
+        <div class="flex gap-2.5 mt-10 justify-center">    
+        <button id="city" class = "la bg-white rounded-full border-black border-4 p-2 w-32 transition-transform transform hover:scale-105" id = incorrect> Play! </button>  
+        </div>  
+    </section>
+
+    <section class = flex-container>
+        <h1 class="text-center text-4xl mb-5"> Guess The Team! </h1>
+        <div class = "w-[400px] h-[400px] bg-football bg-cover bg-slate-800 bg-center rounded-lg shadow-lg border-black border-4"></div>
+        <div class="flex gap-2.5 mt-10 justify-center">
+        <button id="football" class = "la bg-white rounded-full border-black border-4 p-2 w-32 transition-transform transform hover:scale-105" id = incorrect> Play! </button> 
+        </div>
+    </section>
+
+    <section class = flex-container>
+        <h1 class="text-center text-4xl mb-5"> Guess The Animal! </h1>
+        <div class = "w-[400px] h-[400px] bg-meerkat bg-cover bg-slate-800 bg-center rounded-lg shadow-lg border-black border-4"></div>
+        <div class="flex gap-2.5 mt-10 justify-center">
+        <button id="animal" class = "la bg-white rounded-full border-black border-4 p-2 w-32 transition-transform transform hover:scale-105" id = incorrect> Play! </button> 
+        </div>  
+    </section>
+    
+
+  
+    <script defer src="index.js"></script>
+</body>
